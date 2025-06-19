@@ -1,0 +1,1 @@
+export { default as RecipeGrid } from './ui/RecipeGrid.vue';

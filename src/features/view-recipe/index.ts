@@ -1,0 +1,1 @@
+export { default as ViewRecipeModal } from './ui/ViewRecipeModal.vue';
