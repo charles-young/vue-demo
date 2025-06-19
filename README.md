@@ -1,33 +1,52 @@
-# vue-dummy-json
+# Vue Demo Project
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a demo Vue 3 app that uses Feature-Sliced Design (FSD) architecture.
 
-## Recommended IDE Setup
+## Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue 3
+- Vite
+- Vitest
+- Typescript
 
-## Type Support for `.vue` Imports in TS
+## Getting started
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Prerequisites
 
-## Customize configuration
+This project requires:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- NodeJS: Project has been tested with Node 20 and 22
+- npm
 
-## Project Setup
+### Installing Dependencies
 
-```sh
-npm install
-```
+ ```bash
+ npm install
+ ```
 
-### Compile and Hot-Reload for Development
+### Running the app
 
-```sh
-npm run dev
-```
+ ```bash
+ npm run dev
+ ```
 
-### Type-Check, Compile and Minify for Production
+### Running the test ui
 
-```sh
-npm run build
-```
+ ```bash
+ npm run test:ui
+ ```
+
+## Motivation of the project
+
+This project aims to demonstrate a sample project structure that can be applied to a large scale/enterprise grade project.
+
+Many projects tend to become bloated as features accumulate, often resulting in tangled dependencies. This makes it difficult for engineers to add new features or get up to speed, which can snowball into more poorly organized code and increased technical debt.
+
+By using Feature Sliced Design principles this project can address these challenges by:
+
+- Organizing code by feature instead of grouping by code type (e.g., grouping all components or utilities together).
+- Enforcing boundaries and unidirectional dependency flow to reduce coupling and increase modularity.
+- Encouraging encapsulation so multiple developers can work on different parts with a reduced chance of merge conflicts.
+- Improving onboarding through a predictable folder structure and grouping logic by business needs.
+
+This approach should allow for a flexible foundation that can be built upon as scope increases.
