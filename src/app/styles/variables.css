@@ -4,7 +4,6 @@
   --background-gradient: linear-gradient(135deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
   --text-primary: #333;
   --text-secondary: #666;
-  --white: #ffffff;
   --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.2);

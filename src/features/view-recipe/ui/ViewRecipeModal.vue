@@ -97,7 +97,7 @@ defineEmits<{
 .modal-title {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .modal-meta {
@@ -111,12 +111,12 @@ defineEmits<{
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #666;
+  color: var(--text-secondary);
   font-size: 0.9rem;
 }
 
 .cuisine-tag {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: var(--background-gradient);
   color: white;
   padding: 5px 12px;
   border-radius: 15px;
@@ -126,7 +126,7 @@ defineEmits<{
 
 .difficulty {
   padding: 4px 10px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -164,7 +164,7 @@ defineEmits<{
 .instructions h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--text-primary);
   border-bottom: 2px solid #667eea;
   padding-bottom: 5px;
 }

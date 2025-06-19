@@ -124,9 +124,9 @@ const sortOptions = SORT_OPTIONS;
   width: 100%;
   padding: 15px 20px;
   border: none;
-  border-radius: 25px;
+  border-radius: var(--radius-xl);
   font-size: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   outline: none;
   transition: all 0.3s ease;
 }
@@ -140,10 +140,10 @@ const sortOptions = SORT_OPTIONS;
 .sort-select {
   padding: 15px 20px;
   border: none;
-  border-radius: 25px;
+  border-radius: var(--radius-xl);
   font-size: 16px;
   background: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease;

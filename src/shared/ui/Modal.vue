@@ -54,7 +54,7 @@ onBeforeUnmount(() => {
 
 .modal {
   background: white;
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   max-width: 800px;
   max-height: 90vh;
   overflow-y: auto;

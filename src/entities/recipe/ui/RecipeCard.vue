@@ -46,9 +46,9 @@ const totalTime = computed(() => props.recipe.cookTimeMinutes + props.recipe.pre
 <style scoped>
 .recipe-card {
   background: white;
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
@@ -56,7 +56,7 @@ const totalTime = computed(() => props.recipe.cookTimeMinutes + props.recipe.pre
 
 .recipe-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg)
 }
 
 .recipe-image {
@@ -79,7 +79,7 @@ const totalTime = computed(() => props.recipe.cookTimeMinutes + props.recipe.pre
 .recipe-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text-primary);
   margin-bottom: 10px;
   line-height: 1.3;
 }
@@ -95,7 +95,7 @@ const totalTime = computed(() => props.recipe.cookTimeMinutes + props.recipe.pre
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #666;
+  color: var(--text-secondary);
   font-size: 0.9rem;
 }
 
@@ -103,14 +103,14 @@ const totalTime = computed(() => props.recipe.cookTimeMinutes + props.recipe.pre
   background: linear-gradient(45deg, #667eea, #764ba2);
   color: white;
   padding: 5px 12px;
-  border-radius: 15px;
+  border-radius: var(--radius-md);
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .difficulty {
   padding: 4px 10px;
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   font-size: 0.8rem;
   font-weight: 500;
 }
