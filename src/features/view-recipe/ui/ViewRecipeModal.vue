@@ -57,7 +57,7 @@ import type { Recipe } from '@/entities/recipe';
 
 const ingredientCheckedIndices = ref(new Set());
 
-const toggleIngredientChecked = (index) => {
+const toggleIngredientChecked = (index: unknown) => {
   if (ingredientCheckedIndices.value.has(index)) {
     ingredientCheckedIndices.value.delete(index)
   } else {
@@ -65,7 +65,7 @@ const toggleIngredientChecked = (index) => {
   }
 };
 
-const isChecked = (index) => ingredientCheckedIndices.value.has(index);
+const isChecked = (index: unknown) => ingredientCheckedIndices.value.has(index);
 
 defineProps<{
   recipe: Recipe | null;

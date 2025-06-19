@@ -34,3 +34,9 @@ export const useRecipeStore = () => {
     fetchRecipes
   };
 };
+
+export const __resetRecipeStore = () => {
+  recipes.value = []
+  loading.value = false
+  error.value = null
+}

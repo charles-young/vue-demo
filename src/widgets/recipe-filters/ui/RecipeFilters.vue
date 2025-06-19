@@ -50,7 +50,7 @@
           </option>
         </select>
       </div>
-      <div>
+      <div class="sort-controls">
         <label class="sort-label">Favorites: </label>
         <input
           type="checkbox"
